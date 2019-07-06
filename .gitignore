@@ -108,3 +108,7 @@ venv.bak/
 temp.py
 .idea/
 
+/lesson-01/train_sqlResult_1558435.csv
+/lesson-01/train.txt
+/lesson-01/train_movie_comments.csv
+/lesson-01/train_article_9k.txt
