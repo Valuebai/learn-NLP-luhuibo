@@ -19,12 +19,20 @@
 import pandas as pd
 import re
 import jieba
+import random
 from collections import Counter
 
 data_bank_chat_file = 'train.txt'
 data_movie_commonent_file = 'train_movie_comments.csv'
 data_article_9k = 'train_article_9k.txt'
 data_sqlResult = 'train_sqlResult_1558435.csv'
+
+good = """
+good = 对象 状态 加油
+对象 = 你们 | 我们 | 他们 | 你 | 我 | 他
+状态 = 要 | 必须
+加油 = 元气满满 | 加油鸭 | 努力努力
+"""
 
 
 def token(string):
@@ -88,6 +96,46 @@ def prob_sentence(sentence):
     return sentence_pro
 
 
+def create_grammar(grammar_str, line_split='=', value_split=('|')):
+    """
+    主要将输入的文本转为字典中
+    :param grammar:
+    :return: grammar
+    """
+    grammar = {}
+    # 读取文本的每一行，按照\n来进行切分，如果有空的行，即不进行处理
+    for line in grammar_str.split('\n'):
+        if not line.strip(): continue
+        key, value = line.split(line_split)
+        grammar[key.strip()] = [s.split() for s in value.split(value_split)]
+    return grammar
+
+
+def generate(gram_dict, target_str):
+    # 1.从字典中的key中对应的value随机取出一个值，
+    # 2.如果这个值还是字典的key的话，继续上一步的随机取值 如果target不在字典的key中，则返回target
+    if target_str not in gram_dict: return target_str
+    expand = []
+    for t in random.choice(gram_dict[target_str]):
+        expand.append(generate(gram_dict, t))
+    # expaned = [generate(gram_dict, t) for t in random.choice(gram_dict[target])]
+    # 一开始返回expand列表，会得到一个列表[[['这个'], [['蓝色的'], [['蓝色的'], ['null']]], ['女人']], [['坐在'], [['这个'], ['null'], ['女人']]]],我们可以使用''.join将列表中的字符串连接起来
+    # ''.join(expand)打印出来的结果中带有null，再处理下
+    return ''.join([e for e in expand if e != 'null'])
+
+
+def generate_best(gram, string, n):  # you code here
+    sentences_pro_list = []
+    for i in range(n):
+        sentence = generate(gram, string)
+        sentence_pro = prob_sentence(sentence)
+        sentence_pro_list = (sentence, sentence_pro)
+        sentences_pro_list.append(sentence_pro_list)
+    print('===随机生成的句子及概率：')
+    print(sentences_pro_list)
+    return sorted(sentences_pro_list, key=lambda x: x[1], reverse=True)[0]
+
+
 if __name__ == "__main__":
     # 1.读取文本，进行文本清洗，获得所有的纯文本
     movie_comment = pd.read_csv(data_movie_commonent_file, encoding='utf-8', low_memory=False)
@@ -97,8 +145,8 @@ if __name__ == "__main__":
     clean_comment_list = []
     for line in movie_comment_list:
         clean_comment_list.append(''.join(token(str(line))))
-    print('-' * 20 + 'After clean')
-    print('打印清洗过数据的列表:', clean_comment_list)
+    # print('-' * 20 + 'After clean')
+    # print('打印清洗过数据的列表:', clean_comment_list)
 
     # 2.将这些文本进行切词
     TOKEN = []
@@ -135,7 +183,6 @@ if __name__ == "__main__":
     print('句子：我们去上班的概率为', prob_sentence('中国人爱看电影'))
     print('句子：我们去上班的概率为', prob_sentence('中国人爱看电影'))
 
-    print('讲老师课上的句子拿来比较看下概率=====')
     need_compared = [
         "今天晚上请你吃大餐，我们一起吃日料 明天晚上请你吃大餐，我们一起吃苹果",
         "真事一只好看的小猫 真是一只好看的小猫",
@@ -149,6 +196,10 @@ if __name__ == "__main__":
 
     better = s1 if p1 > p2 else s2
 
+    # 用generate_best()来
+    # 获得最优质的的语言
     print('{} is more possible'.format(better))
     print('-' * 4 + ' {} with probility {}'.format(s1, p1))
     print('-' * 4 + ' {} with probility {}'.format(s2, p2))
+    gram_good = create_grammar(grammar_str=good)
+    print('\n获得最优质的的语言是：', generate_best(gram_good, 'good', n=5))
