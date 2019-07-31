@@ -16,7 +16,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+lesson-04/libabc/
 lib64/
 parts/
 sdist/
@@ -126,3 +126,5 @@ temp.py
 /lesson-04/zhwiki500/
 /lesson-04/zhwiki/
 /lesson-04/wikiextractor/
+/lesson-04/zhwiki-20190720-pages-articles-multistream.xml
+/lesson-04/data/
