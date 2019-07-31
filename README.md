@@ -1,7 +1,5 @@
-# learn-NLP-luhuibo
 ## AI&NLP
-## 记录学习NLP之路，一起加油
-## learn NLP together, code for AI
+## 记录学习NLP之路，一起加油 learn NLP together, code for AI
 
 * NLP每个课程的作业和代码放在对应lesson-0X
 * 我的规范：code/review过程中，记录经验和笔记，用【我的笔记】做开头，上下用''' '''注释
