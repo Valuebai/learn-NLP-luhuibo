@@ -6,8 +6,10 @@
 @Date   ：2019/7/31 12:01
 @Desc   ：
 =================================================='''
-# 从同级路径文件夹libabc导入
-from libabc.langconv import *  # 开源的繁体转简体库，配合zh_wiki.py使用
+# langconv这个东西太不好用了，改用hanziconv，直接pip install hanziconv，再from hanziconv import HanziConv
+# HanziConv.toSimplified(要转换的str)
+# from libabc.langconv import *  # 开源的繁体转简体库，配合zh_wiki.py使用——直接废除掉！！！
+from hanziconv import HanziConv
 from gensim.corpora import WikiCorpus
 from gensim.models import Word2Vec, Doc2Vec, doc2vec
 from gensim.models.word2vec import LineSentence
@@ -18,22 +20,6 @@ import pandas as pd
 # 设置log的格式
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',
                     level=logging.INFO)
-
-
-class TaggedWikiDocument:
-    def __init__(self, wiki):
-        self.wiki = wiki
-        self.wiki.metadata = True
-
-    def __iter__(self):
-        for content, (page_id, title) in self.wiki.get_texts():
-            yield doc2vec.LabeledSentence(
-                # 1. 对content中的每一个c，
-                # 2. 转换成简体中文之后用jieba分词
-                # 3. 加入到words列表中
-                words=[w for c in content
-                       for w in jieba.cut(Converter('zh-hans').convert(c))],
-                tags=[title])
 
 
 def preprocess():
@@ -54,12 +40,12 @@ def preprocess():
     """
     count = 0
     zhwiki_path = './data/zhwiki-20190720-pages-articles-multistream.xml.bz2'
-    f = open('./data/reduced_zhwiki2.txt', 'w', encoding='utf8')  # 每次成功跑完，最好改下名字，防止重新跑覆盖了
+    f = open('./data/reduced_zhwiki.txt', 'w', encoding='utf8')  # 每次成功跑完，最好改下名字，防止重新跑覆盖了
     wiki = WikiCorpus(zhwiki_path, lemmatize=False, dictionary={})
     for text in wiki.get_texts():
         word_list = []
         for sentence in text:
-            sentence = Converter('zh-hans').convert(sentence)  # 繁体转简体
+            sentence = HanziConv.toSimplified(sentence)  # 繁体转简体
             seg_list = jieba.cut(sentence)
             for seg in seg_list:
                 word_list.append(seg)
@@ -116,6 +102,8 @@ gensim工具包中详细参数：
 
  12)worker：训练词向量使用时使用的线程数，默认为3。
 
+负采样和层次softmax主要是降低了计算复杂度，提高运算效率
+
     """
     with open('./data/reduced_zhwiki.txt', 'r', encoding='utf8') as f:
         # 使用gensim的Word2Vec类来生成词向量
@@ -128,6 +116,8 @@ def test_w2v():
     """
     检测模型训练后的效果，可以根据词的相似度初步进行判断训练的效果
     测试同义词，找几个单词，看下效果
+    Q: 我的词向量创建过程有错吗？为啥词向量里没有我想要的词呢？
+    A: 这问题我也遇到了 可能你训练的时候词频设置为5  可以把最小词频调低一点
     :return:
     """
     model = Word2Vec.load('./data/zhwiki_news.word2vec')
@@ -147,6 +137,22 @@ def test_w2v():
     print(model.wv['中国'])  # 查看中国的词向量
 
 
+class TaggedWikiDocument:
+    def __init__(self, wiki):
+        self.wiki = wiki
+        self.wiki.metadata = True
+
+    def __iter__(self):
+        for content, (page_id, title) in self.wiki.get_texts():
+            yield doc2vec.LabeledSentence(
+                # 1. 对content中的每一个c，
+                # 2. 转换成简体中文之后用jieba分词
+                # 3. 加入到words列表中
+                words=[w for c in content
+                       for w in jieba.cut(HanziConv.toSimplified(c))],
+                tags=[title])
+
+
 def train_d2v():
     """
     训练doc2vec
@@ -163,10 +169,6 @@ def train_d2v():
 
 
 if __name__ == '__main__':
-    # preprocess()
-    # train_w2v()
-    # test_w2v()
-
     # 第一步，对zhwiki...bz2进行提取，并将繁体字转为简体字，存到reduced_zhwiki.txt
     # 跑一次的时间大概2个多小时
     # 跑完这个要记得注释掉，并修改名称reduced_zhwiki2.txt
@@ -185,7 +187,7 @@ if __name__ == '__main__':
     # print('=' * 30)
 
     # 第二步，word2vec
-    #train_w2v()
+    # train_w2v()
 
     # 第三步，测试效果
     test_w2v()
