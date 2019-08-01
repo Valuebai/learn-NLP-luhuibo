@@ -7,7 +7,7 @@
 @Desc   ：
 =================================================='''
 # langconv这个东西太不好用了，改用hanziconv，直接pip install hanziconv，再from hanziconv import HanziConv
-# HanziConv.toSimplified(要转换的str)
+# 使用：HanziConv.toSimplified(要转换的str)
 # from libabc.langconv import *  # 开源的繁体转简体库，配合zh_wiki.py使用——直接废除掉！！！
 from hanziconv import HanziConv
 from gensim.corpora import WikiCorpus
@@ -46,7 +46,7 @@ def preprocess():
         word_list = []
         for sentence in text:
             sentence = HanziConv.toSimplified(sentence)  # 繁体转简体
-            seg_list = jieba.cut(sentence)
+            seg_list = jieba.cut(sentence)  # 用结巴分词
             for seg in seg_list:
                 word_list.append(seg)
         f.write(' '.join(word_list) + '\n')

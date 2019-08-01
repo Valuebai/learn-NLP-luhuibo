@@ -5,13 +5,18 @@
 @Author ：LuckyHuibo
 @Date   ：2019/8/1 0:59
 @Desc   ：
+将提取的wiki中文语料txt转化为简体的
+
+不要用opencc处理，麻烦
+改用hanziconv，直接pip install hanziconv，再from hanziconv import HanziConv
+使用：HanziConv.toSimplified(要转换的str)
 =================================================='''
-import zhconv
+
 from hanziconv import HanziConv
 
 print('主程序执行开始...')
 
-input_file_name = './data/reduced_zhwiki.txt'
+input_file_name = './data/wiki.cn.txt'
 output_file_name = './data/wiki.cn.simple.txt'
 input_file = open(input_file_name, 'r', encoding='utf-8')
 output_file = open(output_file_name, 'w', encoding='utf-8')
