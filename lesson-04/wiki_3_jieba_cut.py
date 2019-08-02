@@ -36,20 +36,20 @@ file.close()
 |w+b|读写，二进制，若文件已存在，内容将先被清空|
 |a+b|读写，二进制，若文件已存在，内容不会清空|
 =================================================='''
-import codecs
+# import codecs   ——因为linix-centOS7无法安装codecs，故使用open即可
 import jieba
 
 if __name__ == "__main__":
     infile = './data/wiki.cn.simple.txt'
     outfile = './data/wiki-jieba-zh-words.txt'
 
-    descsFile = codecs.open(infile, 'rb', encoding='utf-8')
+    open_infile = open(infile, 'rb', encoding='utf-8')
     i = 0
     with open(outfile, 'w', encoding='utf-8') as f:
-        for line in descsFile:
+        for line in open_infile:
             i += 1
             if i % 1000 == 0:
-                print('目前已处理%个' % i)
+                print('目前已处理%d个' % i)
             line = line.strip()
             words = jieba.cut(line)
             for word in words:
