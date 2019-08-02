@@ -43,7 +43,7 @@ if __name__ == "__main__":
     infile = './data/wiki.cn.simple.txt'
     outfile = './data/wiki-jieba-zh-words.txt'
 
-    open_infile = open(infile, 'rb', encoding='utf-8')
+    open_infile = open(infile, 'r', encoding='utf-8')
     i = 0
     with open(outfile, 'w', encoding='utf-8') as f:
         for line in open_infile:
