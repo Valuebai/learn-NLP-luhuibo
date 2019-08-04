@@ -22,3 +22,35 @@
 - word2vec(CBOW, skip-gram)
 - gensim.models.word2vec进行词向量训练
 - Sklearn中TSNE进行词向量的可视化
+
+### lesson-05 知识点
+
+### sci-computing
+- SciPythonTutorial1-Numpy介绍.ipynb
+- SciPythonTutorial2-Matplotlib.ipynb
+- SciPythonTutorial3-Pandas_介绍.ipynb
+  - SciPythonTutorial3-Pandas_Cheat_Sheet.pdf
+  
+  
+- numpy必知必会26问.py
+- Numba介绍.ipynb
+
+### Books
+- 数学之美.pdf
+- 深度学习-[美]Ian+Goodfellow（伊恩·古德费洛）.pdf
+
+- 《Python自然语言处理实战：核心技术与算法》.pdf
+- 机器学习实战：基于Scikit-Learn和TensorFlow.pdf
+- 神经网络与深度学习（仅限学习交流请勿传播）-邱锡鹏.pdf
+- 斯坦福CS224n_自然语言处理与深度学习_笔记_hankcs.pdf
+- word2vec.pdf
+- Visualizing-Data-using-t-SNE.pdf
+
+
+- 流畅的python.pdf
+- FlaskWeb开发：基于Python的Web应用开发实战.pdf
+- linux简单命令速查表.pdf
+
+
+- 《百面机器学习算法工程师带你去面试》中文PDF.pdf
+

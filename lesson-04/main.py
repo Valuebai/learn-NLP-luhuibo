@@ -14,9 +14,11 @@ from gensim.corpora import WikiCorpus
 from gensim.models import Word2Vec, Doc2Vec, doc2vec
 from gensim.models.word2vec import LineSentence
 import jieba
-import logging
 import pandas as pd
 
+# 【官网tutorials】Gensim uses Python’s standard logging module to log various stuff
+# at various priority levels; to activate logging (this is optional), run
+import logging
 # 设置log的格式
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',
                     level=logging.INFO)
