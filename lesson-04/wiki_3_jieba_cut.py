@@ -40,10 +40,15 @@ file.close()
 import jieba
 
 if __name__ == "__main__":
+    print('主程序执行开始...')
     infile = './data/wiki.cn.simple.txt'
     outfile = './data/wiki-jieba-zh-words.txt'
 
+    print('开始读入数据文件...')
     open_infile = open(infile, 'r', encoding='utf-8')
+    print('读入数据文件结束！')
+
+    print('分词程序执行开始...')
     i = 0
     with open(outfile, 'w', encoding='utf-8') as f:
         for line in open_infile:
@@ -55,3 +60,5 @@ if __name__ == "__main__":
             for word in words:
                 f.write(word + ' ')
             f.write('\n')
+    print('分词程序执行结束！')
+    print('主程序执行结束！')

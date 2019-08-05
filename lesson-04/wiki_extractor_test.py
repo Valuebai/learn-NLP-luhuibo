@@ -54,7 +54,7 @@ def test_draw():
     logging.basicConfig(format="%(asctime)s:%(levelname)s:%(message)s", level=logging.INFO)
     model = models.Word2Vec.load("./data/zhwiki_news.word2vec")  # 这个zhwiki_news.word2vec是我训练好的，你可以直接Load你训练好的model
     # 输入一个词找出相似的前10个词
-    one_corpus = ["心理"]
+    one_corpus = ["三水"]
     result = model.wv.most_similar(one_corpus[0], topn=100)
     # 将返回的结果转换为字典,便于绘制词云
     word_cloud = dict()
