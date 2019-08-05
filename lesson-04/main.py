@@ -4,7 +4,7 @@
 @IDE    ：PyCharm
 @Author ：LuckyHuibo
 @Date   ：2019/7/31 12:01
-@Desc   ：
+@Desc   ：主要将wiki,1,2,3,4,5整合进来，方便一起执行
 =================================================='''
 # langconv这个东西太不好用了，改用hanziconv，直接pip install hanziconv，再from hanziconv import HanziConv
 # 使用：HanziConv.toSimplified(要转换的str)
@@ -19,6 +19,7 @@ import pandas as pd
 # 【官网tutorials】Gensim uses Python’s standard logging module to log various stuff
 # at various priority levels; to activate logging (this is optional), run
 import logging
+
 # 设置log的格式
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',
                     level=logging.INFO)
@@ -110,7 +111,7 @@ gensim工具包中详细参数：
     with open('./data/reduced_zhwiki.txt', 'r', encoding='utf8') as f:
         # 使用gensim的Word2Vec类来生成词向量
         model = Word2Vec(LineSentence(f), sg=0, size=192, window=5,
-                         min_count=5, workers=4)
+                         min_count=5, workers=4)  # size默认是100-300，根据你的语料大小进行增加，效果看你的需求
         model.save('./data/zhwiki_news.word2vec')
 
 

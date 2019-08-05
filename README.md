@@ -54,3 +54,11 @@
 
 - 《百面机器学习算法工程师带你去面试》中文PDF.pdf
 
+
+
+### requirements.txt
+- 生成指南：
+- 第一步：安装包 pip install pipreqs
+- 第二步：在对应路径cmd，输入：pipreqs ./ --encoding=utf8 避免中文路径报错
+- 第三步：下载该代码后直接pip install -r requirements.txt
+
