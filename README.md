@@ -7,11 +7,15 @@
 
 ### lesson-01 知识点
 
+
 ### lesson-02 知识点
+
 
 ### lesson-03 知识点
 
+
 ### lesson-04 知识点
+
 - 使用维基百科下载中文语料库
 - python wikipedia extractor抽取维基百科的内容
 - jieba分词
@@ -23,7 +27,19 @@
 - gensim.models.word2vec进行词向量训练
 - Sklearn中TSNE进行词向量的可视化
 
+- 面试题：如果实现softmax()，代码是？为什么要用它？
+
 ### lesson-05 知识点
+
+- NER
+- TFIDF
+- wordcloud
+- 用jieba 词性——解决80%左右的问题
+- jieba, nlp,coreNLP 三个的比较
+
+
+- 面试题：为什么要用cos距离，夹角的距离来计算文本的相似度呢？
+
 
 ### sci-computing
 - SciPythonTutorial1-Numpy介绍.ipynb
@@ -34,6 +50,7 @@
   
 - numpy必知必会26问.py
 - Numba介绍.ipynb
+
 
 ### Books
 - 数学之美.pdf
