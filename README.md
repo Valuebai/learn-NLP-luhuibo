@@ -36,11 +36,26 @@
 - 用jieba 词性——解决80%左右的问题
 - jieba, nlp,coreNLP 三个的比较
 
-
 #### 面试题：为什么要用cos距离，夹角的距离来计算文本的相似度呢？
 
+## lesson-06 知识点 
 
-## sci-computing
+#### 主要讲【机器学习】相关的基础知识
+
+- 机器学习的评价标准
+
+#### 面试题A：为什么叫朴素贝叶斯？？
+#### 面试题B：什么是欠拟合，什么是过拟合？在项目中有没有遇到过，是怎么解决的呢？
+欠拟合 - 因为模型过于太简单了
+过拟合 - 用数据训练出来的A，在实际应用B上不准或不对
+作业：总结下overfitting（欠拟合）和 underfitting（过拟合）的原因
+#### 面试题C：什么是Bias（偏差）和 Vaiance（方差）？，统计学背景的面试官可能会问
+
+
+Links：
+总结：Bias(偏差)，Error(误差)，Variance(方差)及CV(交叉验证)，https://www.jianshu.com/p/8d01ac406b40
+
+## Sci-Computing
 - SciPythonTutorial1-Numpy介绍.ipynb
 - SciPythonTutorial2-Matplotlib.ipynb
 - SciPythonTutorial3-Pandas_介绍.ipynb
