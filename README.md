@@ -34,7 +34,9 @@
 - TFIDF
 - wordcloud
 - 用jieba 词性——解决80%左右的问题
-- jieba, nlp,coreNLP 三个的比较
+- jieba, pyltp,coreNLP 三个的比较
+
+- pyltp 中文分词的使用
 
 #### 面试题：为什么要用cos距离，夹角的距离来计算文本的相似度呢？
 
@@ -54,6 +56,43 @@
 
 Links：
 总结：Bias(偏差)，Error(误差)，Variance(方差)及CV(交叉验证)，https://www.jianshu.com/p/8d01ac406b40
+
+
+## lesson-07
+- 目标：判别一篇新闻的来源是否为新华社
+- 重点：样本中有 87% 来源是新华社，因此低于87%的的判别可以认为是无效的
+- 方法：TFIDF向量化、Precision； Recall； F1 Score ；ROC AUC score
+- 对以下方法均计算了上述参数： Logistic Regression、KNN、SVM、Naive Bayes、Random Tree、 Random Forest
+- 最后在87052篇新闻中，找出了180篇疑似抄袭的新闻
+
+## lesson-08知识点 
+在做所有机器学习问题时：
+Important of Preprocessing
+* Balance Analysis, 确定一个基准Base line
+* Remove Noise, outliers问题
+* Remove Collinearity, 数据越大，纬度越大（纬度灾难）
+* Rescale Inputs, lesson-07提到
+
+老师，发一下你之前讲的SVM推导的视频吧
+Minchiuan Gao对所有人说： 09:11 PM
+https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIumekTziMw
+密码： AI@NLP
+Xin对所有人说： 09:12 PM
+显示密码错误
+Minchiuan Gao对所有人说： 09:12 PM
+A1@NLP
+
+- 笔记：学习这几个模型，要学会科学的思维
+- 怎么调参数呢？——1. 观察    2. 猜想   3. 动手实践    4. 检查与验证
+
+- 面试题：
+- 1. 为什么叫SVM？
+- 2. 什么叫核函数
+- 3. SVM的空间变换
+- 4. KNN-速度慢，空间大
+- 5. 为什么叫朴素贝叶斯，PPT的计算题
+- K-means的时间复杂度是多少？（阿里内部还是有用到K-means的）
+
 
 ## Sci-Computing
 - SciPythonTutorial1-Numpy介绍.ipynb
@@ -93,3 +132,27 @@ Links：
 - 第二步：在对应路径cmd，输入命令生成 requirements.txt文件：pipreqs ./ --encoding=utf8 避免中文路径报错
 - 第三步：下载该代码后直接pip install -r requirements.txt
 
+- QA
+问题：主题模型和lda和拉普拉斯变换
+
+答案：
+
+问题：对于0/1分类变量/数值变量除了归一化还有其他处理法吗
+
+答案：
+
+问题：前后文关系和句法分析和知识图谱
+
+答案：
+
+问题：切词切不好和遇到新词以及源代码改进
+
+答案：
+
+问题：两堆名字，对应论文和著作文，求最快匹配
+
+答案：
+
+问题：特征工程：特征转换，特征提取
+
+答案：
