@@ -52,7 +52,7 @@ def get_news_from_sql(host, user, password, database, port):
 
 def save_txt(news):
     try:
-        with open('../data/news-sentences-xut.txt', 'w', encoding='utf-8') as f:
+        with open('../data/news-sentences-xut2.txt', 'w', encoding='utf-8') as f:
             for content in news:
                 data = content[0]
                 text = clean(data)

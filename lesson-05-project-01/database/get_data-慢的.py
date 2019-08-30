@@ -5,6 +5,10 @@
 @Author ：LuckyHuibo
 @Date   ：2019/8/20 20:03
 @Desc   ：连接数据库，读取数据
+
+【问题】我有个数据库读取保存数据的性能问题要请教下：
+# 同样的代码，save_txt的代码写到get_news_from_sql的最后面，保存文本慢得要死，一行一行地读取数据
+# 将代码分开写成函数，速度一下子提升上万倍，一下子就保存好了
 =================================================='''
 import pymysql
 import re
@@ -45,12 +49,12 @@ def get_news_from_sql(host, user, password, database, port):
     cursor.close()
     db.close()
 
-    return news
+    # return news
 
     # 同样的代码，save_txt的代码写到get_news_from_sql的最后面，保存文本慢得要死，一行一行地读取数据
     # 将代码分开写成函数，速度一下子提升上万倍，一下子就保存好了
 
-def save_txt(news):
+    # def save_txt(news):
     try:
         with open('../data/news-sentences-xut.txt', 'w', encoding='utf-8') as f:
             for content in news:
@@ -69,7 +73,7 @@ if __name__ == "__main__":
     port = 3306
     try:
         contents = get_news_from_sql(host, user, password, database, port)
-        save_txt(contents)
+        # save_txt(contents)
     except Exception:
         # 如果发生异常，则回滚
         print("ERROR", Exception)
