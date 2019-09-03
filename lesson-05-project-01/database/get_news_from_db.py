@@ -12,6 +12,9 @@
 2. 保存说的相似词到数据库中
 =================================================='''
 import pymysql, re, logging
+from config.get_ai_db import GetConfParams
+
+ConfParams = GetConfParams()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(lineno)d -  %(message)s')
 logger = logging.getLogger(__name__)
@@ -66,11 +69,13 @@ def clean(s):
 
 
 if __name__ == "__main__":
-    host = "rm-8vbwj6507z6465505ro.mysql.zhangbei.rds.aliyuncs.com"  # 主机
-    port = 3306  # 端口
-    user = "root"  # 用户名
-    password = "AI@2019@ai"  # 密码
-    database = "stu_db"  # 数据库名
+    # 从config配置文件中读取数据库信息
+    host = ConfParams.host
+    user = ConfParams.user
+    password = ConfParams.password
+    database = ConfParams.db_name
+    port = ConfParams.port
+
     # connect db and get the data
     news = connect_db(host, port, user, password, database)
     # save the data in txt

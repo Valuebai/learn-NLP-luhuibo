@@ -9,6 +9,14 @@
 import pymysql
 import re
 import pysnooper
+# 从config配置中读取数据库配置
+from config.get_db_info import GetConfParams
+# 从config配置中读取news_sentences_xut文件路径
+from config.file_path import path_news_sentences_xut_txt
+
+# 实例化读取配置对象，日志对象
+ConfParams = GetConfParams()
+logger = ConfParams.logger
 
 
 def clean(s):
@@ -25,10 +33,9 @@ def clean(s):
 # 从数据库中得到新闻语料库
 @pysnooper.snoop()
 def get_news_from_sql(host, user, password, database, port):
-    print('开始连接数据库...')
+    logger.info('开始连接数据库...')
     db = pymysql.connect(host, user, password, database, port, charset='utf8')  # 不添加charset，读取到的数据是乱码
-    print(db)
-    print('连接成功...')
+    logger.info('连接成功...')
 
     cursor = db.cursor()
     sql = """SELECT content from news_chinese"""
@@ -36,7 +43,7 @@ def get_news_from_sql(host, user, password, database, port):
         cursor.execute(sql)
     except Exception as e:
         # 如果发生异常，则回滚
-        print("发生异常", e)
+        logger.error("发生异常", e)
         db.rollback()
         return
 
@@ -50,28 +57,33 @@ def get_news_from_sql(host, user, password, database, port):
     # 同样的代码，save_txt的代码写到get_news_from_sql的最后面，保存文本慢得要死，一行一行地读取数据
     # 将代码分开写成函数，速度一下子提升上万倍，一下子就保存好了
 
-def save_txt(news):
+
+def save_txt(news, file_name=None):
+    if file_name is None:
+        file_name = path_news_sentences_xut_txt
     try:
-        with open('../data/news-sentences-xut.txt', 'w', encoding='utf-8') as f:
+        with open(file_name, 'w', encoding='utf-8') as f:
             for content in news:
                 data = content[0]
                 text = clean(data)
                 f.write(text + '\n')
     except Exception as w:
-        print('保存数据到文本出现问题', w)
+        logger.error('保存数据到文本出现问题', w)
 
 
 if __name__ == "__main__":
-    host = "rm-8vbwj6507z6465505ro.mysql.zhangbei.rds.aliyuncs.com"
-    user = "root"
-    password = "AI@2019@ai"
-    database = "stu_db"
-    port = 3306
+    # 从config配置文件中读取数据库信息
+    host = ConfParams.host
+    user = ConfParams.user
+    password = ConfParams.password
+    database = ConfParams.db_name
+    port = ConfParams.port
+
     try:
         contents = get_news_from_sql(host, user, password, database, port)
         save_txt(contents)
     except Exception:
         # 如果发生异常，则回滚
-        print("ERROR", Exception)
+        logger.error("ERROR", Exception)
         # db.rollback()
         pass
