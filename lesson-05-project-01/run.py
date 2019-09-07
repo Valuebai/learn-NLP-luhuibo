@@ -40,13 +40,13 @@ def extra():
     if not news:
         return '<script>alert("没有输入内容！")</script>'
     parse = del_sentences(news)
-    print('parse is', parse[0])
+    print('parse is', parse)
     # infos = parse()
     # if isinstance(infos, list):
     #     infos_type = "list"
     # else:
     #     infos_type = 'str'
-    return render_template('extra.html', news=parse[0])
+    return render_template('extra.html', news=parse)
 
 
 if __name__ == "__main__":
