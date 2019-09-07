@@ -1,7 +1,13 @@
 <!doctype html>
 <title>Hello from Flask</title>
 {% if news %}
-<h1>Hello {{ news }}!</h1>
+<h1>
+    {% for i in news %}
+    {{ i }}{# 注意i也要用两个大括号 #}<br>
+    {% endfor %}
+</h1>
 {% else %}
-<h1>Hello, World!</h1>
+<h1>
+    Hello, World!
+</h1>
 {% endif %}
