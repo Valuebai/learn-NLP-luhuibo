@@ -10,6 +10,7 @@ from gensim.models import Word2Vec
 from collections import defaultdict
 import os
 
+
 def get_related_words(initial_words, model):
     """
     @initial_words
@@ -39,7 +40,9 @@ def get_words_said(model_path):
     model = Word2Vec.load(model_path)
     related_words = get_related_words(['说', '表示', '认为'], model)
     related_words = sorted(related_words.items(), key=lambda x: x[1], reverse=True)
+    print(related_words)
     said = [i[0] for i in related_words if i[1] >= 1]
+    print(said)
     return said
 
 
@@ -47,7 +50,7 @@ def save_said(path):
     said = get_words_said(path)
     string = '|'.join(said)
     try:
-        with open("similar_said.txt", 'w') as f:
+        with open("similar_said.txt", 'w', encoding='utf-8') as f:
             f.write(string)
         return True
     except:
@@ -56,15 +59,19 @@ def save_said(path):
 
 def load_said(filename):
     if os.path.exists(filename):
-        with open(filename, 'r') as f:
+        with open(filename, 'r', encoding='utf-8') as f:
             string = f.readlines()
             string = string[0].split('|')
             return string
 
 
 if __name__ == '__main__':
-    path = "../data/news_model"
+    # path = "../data/news_model"
+    path = "../data/zhwiki_news.word2vec"
     result = save_said(path)
     if result:
         string = load_said("../data/similar_said.txt")
         print(string)
+    model = Word2Vec.load(path)
+    said = model['说']
+    print(said)
