@@ -10,6 +10,8 @@ from flask import Flask, render_template, request
 from similar_said.speechExtract import del_sentences
 import jieba
 import re
+import sys
+import os
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
@@ -38,7 +40,8 @@ def extra():
     news = request.form['news']
     print('news is ', news)
     if not news:
-        return '<script>alert("没有输入内容！")</script>'
+        # return '<script>alert("没有输入内容！")</script>'
+        news = "国台办表示中国必然统一。会尽最大努力争取和平统一，但绝不承诺放弃使用武力。"
     parse = del_sentences(news)
     print('parse is', parse)
     # infos = parse()
@@ -50,4 +53,4 @@ def extra():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True, port=8765)

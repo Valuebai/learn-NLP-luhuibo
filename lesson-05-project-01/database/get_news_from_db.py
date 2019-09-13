@@ -12,7 +12,7 @@
 2. 保存说的相似词到数据库中
 =================================================='''
 import pymysql, re, logging
-from config.get_ai_db import GetConfParams
+from config.get_db_info import GetConfParams
 
 ConfParams = GetConfParams()
 

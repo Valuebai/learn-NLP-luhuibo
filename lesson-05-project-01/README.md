@@ -1,5 +1,7 @@
 ## 项目一：新闻任务言论自动提取
 
+## 本项目已独立出来，放到https://github.com/Valuebai/NewsInfo-Auto-Extration
+
 ### 语料库
 #### 语料库来源：WIKI和提供的数据库news
 

@@ -1,9 +1,17 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+
+import sys
 import os
+
+current_dir = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(current_dir)[0]
+sys.path.append(rootPath)
+
+from config.file_path import LTP_DATA_DIR, said_path
 from similar_said.urils import deal
 from similar_said.get_word_similar_said import load_said
-from config.file_path import LTP_DATA_DIR, said_path
+import pysnooper
 
 
 # 分句
@@ -22,6 +30,7 @@ def split_words(sentences):
 
 
 # 词性分析
+@pysnooper.snoop()
 def get_word_pos(ltp_model_path, sents):
     model_path = ltp_model_path
     pos_model_path = os.path.join(model_path, 'pos.model')
@@ -36,10 +45,12 @@ def get_word_pos(ltp_model_path, sents):
 
 
 # 依存句法分析
+@pysnooper.snoop()
 def dependency_parsing(ltp_model_path, sents, postags, said):
     LTP_DATA_DIR = ltp_model_path  # ltp模型目录的路径
     par_model_path = os.path.join(LTP_DATA_DIR, 'parser.model')  # 依存句法分析模型路径，模型名称为`parser.model`
     ner_model_path = os.path.join(LTP_DATA_DIR, 'ner.model')  # 依存句法分析模型路径，模型名称为`ner.model`
+    # print('ner_model_path is:', ner_model_path)
 
     from pyltp import Parser, NamedEntityRecognizer
     recognizer = NamedEntityRecognizer()  # 初始化实例
@@ -79,8 +90,10 @@ def dependency_parsing(ltp_model_path, sents, postags, said):
     return contents
 
 
+@pysnooper.snoop()
 def del_sentences(string):
     path = os.path.join(said_path, "similar_said.txt")
+    # print('111', path)
     said = load_said(path)
 
     ltp_model_path = LTP_DATA_DIR
