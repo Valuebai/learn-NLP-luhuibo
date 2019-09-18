@@ -1,5 +1,16 @@
 
 ## Project-02-文本摘要，项目2的开始
+```jupyterpython
+
+## Auto Summarization
+#### Main References: 
+1. TextRank: https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf
+2. SentenceEmbedding: https://openreview.net/pdf?id=SyK00v5xx
+3. InformationRetrievalAndTextMining: https://github.com/Artificial-Intelligence-for-NLP-Chinese/References/tree/master/information-retrieve
+
+——from Mr.Gao[https://github.com/Computing-Intelligence/AutoSummarization]
+```
+
 - word2vec: FastText
 - 句子向量：2019年普林斯顿大学的文章，老师的参考论文
 - 文章向量
