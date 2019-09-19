@@ -10,6 +10,12 @@
 
 ## lesson-02 知识点
 - 待补充
+- 爬虫获取广州地铁路线的数据
+- 利用广度/深度优先搜索算法，获取2个地铁站之间的换乘路线
+- 因为百度的页面太不规范，导致有几个页面无法获取数据，故我使用的是WIKI百科的，https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%B7%9E%E5%9C%B0%E9%93%81    
+- 使用高德地图API获取坐标：https://map.amap.com/subway/index.html，根据坐标点绘制广州地铁图
+![image](https://user-images.githubusercontent.com/9695113/65223170-2d188300-daf3-11e9-91a7-0b3a2c7bd077.png)
+- 使用的技术：爬虫-beautifulsoup-数据处理, re, bfs, dfs等
 
 ## lesson-03 知识点
 - 待补充
