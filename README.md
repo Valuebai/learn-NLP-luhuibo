@@ -57,8 +57,10 @@
 
 - pyltp 中文分词的使用
 
-#### 面试题：为什么要用cos距离，夹角的距离来计算文本的相似度呢？
+**面试题：为什么要用cos距离，夹角的距离来计算文本的相似度呢？**
 
+> Project-01 NewsInfo-Auto-Extration 新闻任务言论自动提取
+> - github: https://github.com/Valuebai/NewsInfo-Auto-Extration
 
 ---
 ## lesson-06 知识点 
@@ -90,13 +92,15 @@ Links：
 
 ---
 ## lesson-08知识点 
-在做所有机器学习问题时：
-Important of Preprocessing
-* Balance Analysis, 确定一个基准Base line
-* Remove Noise, outliers问题
-* Remove Collinearity, 数据越大，纬度越大（纬度灾难）
-* Rescale Inputs, lesson-07提到
 
+**在做所有机器学习问题时：Important of Preprocessing**
+
+- Balance Analysis, 确定一个基准Base line
+- Remove Noise, outliers问题
+- Remove Collinearity, 数据越大，纬度越大（纬度灾难）
+- Rescale Inputs, lesson-07提到
+
+```
 老师，发一下你之前讲的SVM推导的视频吧
 Minchiuan Gao对所有人说： 09:11 PM
 https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIumekTziMw
@@ -105,17 +109,30 @@ Xin对所有人说： 09:12 PM
 显示密码错误
 Minchiuan Gao对所有人说： 09:12 PM
 A1@NLP
+```
 
-- 笔记：学习这几个模型，要学会科学的思维
+**笔记：学习这几个模型，要学会科学的思维**
 - 怎么调参数呢？——1. 观察    2. 猜想   3. 动手实践    4. 检查与验证
 
-- 面试题：
+**面试题：**
 1. 为什么叫SVM？
 2. 什么叫核函数
 3. SVM的空间变换
 4. KNN-速度慢，空间大
 5. 为什么叫朴素贝叶斯，PPT的计算题
 6. K-means的时间复杂度是多少？（阿里内部还是有用到K-means的）
+
+> 新华社新闻抄袭自动判别
+```
+任务要求：
+
+1. 构建一个机器学习模型，判断这个文章是不是新华社的
+2. 当这个模型的acc 大于 0.8778， recall， precision，f1等值都较高的时候
+3. 用该模型 判断一篇文章是否是新华社的文章，如果判断出来是新华社的，但是，它的source并不是新华社的，那么，我们就说，这个文章是抄袭的新华社的文章
+4. Text Representation uses "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html"
+```
+
+
 
 ---
 ## lesson-09知识点 
