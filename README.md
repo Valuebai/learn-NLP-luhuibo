@@ -1,13 +1,23 @@
 # AI&NLP
 ## 记录学习NLP之路，一起加油 learn NLP together, code for AI
 
+
+![Languages](https://img.shields.io/badge/Languages-Python3.6-green)
+![Build](https://img.shields.io/badge/Build-passing-brightgreen.svg)
+![License](https://img.shields.io/badge/License-MIT-orange.svg)
+![Contributions](https://img.shields.io/badge/Contributions-welcome-ff69b4.svg)
+
+
 * NLP每个课程的作业和代码放在对应lesson-0X
 * 我的规范：code/review过程中，记录经验和笔记，用【我的笔记】做开头，上下用''' '''注释
 * 开头默认用模板，详细描述代码使用，方便后面整理和review（设置pycharm自动生成）, 详情见里面的代码
 
+---
 ## lesson-01 知识点
 - 待补充
+- 人工智能的历史、发展、应用的概述
 
+---
 ## lesson-02 知识点
 - 待补充
 - 爬虫获取广州地铁路线的数据
@@ -17,9 +27,11 @@
 ![image](https://user-images.githubusercontent.com/9695113/65223170-2d188300-daf3-11e9-91a7-0b3a2c7bd077.png)
 - 使用的技术：爬虫-beautifulsoup-数据处理, re, bfs, dfs等
 
+---
 ## lesson-03 知识点
 - 待补充
 
+---
 ## lesson-04 知识点
 - 使用维基百科下载中文语料库
 - python wikipedia extractor抽取维基百科的内容
@@ -34,6 +46,7 @@
 
 #### 面试题：如果实现softmax()，代码是？为什么要用它？
 
+---
 ## lesson-05 知识点
 
 - NER
@@ -46,6 +59,8 @@
 
 #### 面试题：为什么要用cos距离，夹角的距离来计算文本的相似度呢？
 
+
+---
 ## lesson-06 知识点 
 
 #### 主要讲【机器学习】相关的基础知识
@@ -64,6 +79,7 @@ Links：
 总结：Bias(偏差)，Error(误差)，Variance(方差)及CV(交叉验证)，https://www.jianshu.com/p/8d01ac406b40
 
 
+---
 ## lesson-07
 - 目标：判别一篇新闻的来源是否为新华社
 - 重点：样本中有 87% 来源是新华社，因此低于87%的的判别可以认为是无效的
@@ -71,6 +87,8 @@ Links：
 - 对以下方法均计算了上述参数： Logistic Regression、KNN、SVM、Naive Bayes、Random Tree、 Random Forest
 - 最后在87052篇新闻中，找出了180篇疑似抄袭的新闻
 
+
+---
 ## lesson-08知识点 
 在做所有机器学习问题时：
 Important of Preprocessing
@@ -92,14 +110,41 @@ A1@NLP
 - 怎么调参数呢？——1. 观察    2. 猜想   3. 动手实践    4. 检查与验证
 
 - 面试题：
-- 1. 为什么叫SVM？
-- 2. 什么叫核函数
-- 3. SVM的空间变换
-- 4. KNN-速度慢，空间大
-- 5. 为什么叫朴素贝叶斯，PPT的计算题
-- K-means的时间复杂度是多少？（阿里内部还是有用到K-means的）
+1. 为什么叫SVM？
+2. 什么叫核函数
+3. SVM的空间变换
+4. KNN-速度慢，空间大
+5. 为什么叫朴素贝叶斯，PPT的计算题
+6. K-means的时间复杂度是多少？（阿里内部还是有用到K-means的）
+
+---
+## lesson-09知识点 
+
+<font color=red>**本次作业，你需要完成1, 2, 3三个联系。 能够掌握：**</font>
+- 数据预处理的知识
+- 深度学习程序的构建方式
+- 训练集、测试集、验证集
+- 神经网络的基础知识
+- 图计算网络
+- 正则化
+- 等非常重要的知识
+
+<font color=red>**assignment**</font>
+
+- 1_notmnist 训练
+- 2_fullyconnected
+- 3_regularization ——《统计学习方法》书中有很好的介绍，待总结
+
+---
+## lesson-10知识点
 
 
+---
+## lesson-11知识点
+
+
+
+---
 ## Sci-Computing
 - SciPythonTutorial1-Numpy介绍.ipynb
 - SciPythonTutorial2-Matplotlib.ipynb
@@ -110,7 +155,7 @@ A1@NLP
 ##### numpy必知必会26问.py
 ##### Numba介绍.ipynb
 
-
+---
 ## Books
 - 数学之美.pdf
 - 深度学习-[美]Ian+Goodfellow（伊恩·古德费洛）.pdf
@@ -131,7 +176,7 @@ A1@NLP
 - 《百面机器学习算法工程师带你去面试》中文PDF.pdf
 
 
-
+---
 ## requirements.txt
 - 生成指南：
 - 第一步：安装包 pip install pipreqs
