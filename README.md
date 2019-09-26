@@ -62,6 +62,7 @@
 > Project-01 NewsInfo-Auto-Extration 新闻任务言论自动提取
 > - github: https://github.com/Valuebai/NewsInfo-Auto-Extration
 
+![pyltp简介](./images/pyltp简介.jpg)
 ---
 ## lesson-06 知识点 
 
