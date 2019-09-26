@@ -10,7 +10,13 @@
 
 ——from Mr.Gao[https://github.com/Computing-Intelligence/AutoSummarization]
 ```
+---
+## 参考资料
+> [手把手 | 基于TextRank算法的文本摘要（附Python代码）](https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651666276&idx=3&sn=fbd030dda4318ca328fcf918fc1df1e3&chksm=bd4c10f78a3b99e1b6ebfe362a969f36f39e72ce93336bf3fe4fa03b237120156a82c8becfd4&mpshare=1&scene=1&srcid=0926aQxlE7uoNlUkHMjmqwpV&sharer_sharetime=1569463898414&sharer_shareid=7429dfbe8eeefb16193f3b889173524e&key=1d1ca7b6df234b6eb8721eb961bac936b31eea52d6df0f9da7f23ed3ac6a644973c0ce22b6d73db01420f94551b51ba4ff3373167795ed451f3c89779f5c0ab3936d1403bee433d2c0815daaab647ab5&ascene=1&uin=MTE2NTM1NQ%3D%3D&devicetype=Windows+10&version=62070141&lang=zh_CN&pass_ticket=FjR0fPMrSxrRHa7VbnHhBJ%2BAFLgOTXEKsBcxoKN7PN8%3D)
+>> 里面的过程可以参考下，有助于理解文本自动摘要的过程
 
+---
+## 课堂的笔记
 - word2vec: FastText
 - 句子向量：2019年普林斯顿大学的文章，老师的参考论文
 - 文章向量
@@ -59,7 +65,7 @@ for sentence in sentences_of_document:
 - ELMo
 - BERT
 
-
+---
 ## 公式的练习
 
 $x_1$
