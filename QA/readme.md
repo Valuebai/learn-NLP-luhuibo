@@ -22,13 +22,13 @@
 > 8月18日
 > https://shimo.im/sheets/3rqK8KTDQxVJtgk6/MODOC/ 
 
-> 8月25日
+> 8月25日(部分没回答)
 > https://shimo.im/sheets/c3398pPGhJy8jKCy/MODOC/ 
 
-> 9月1日
+> 9月1日(部分没回答)
 > https://shimo.im/sheets/8wyPgw9TKHgphjXr/MODOC/ 
 
-> 9月8日
+> 9月8日(都没回答)
 > https://shimo.im/sheets/g9PwrJKtyc6CKhxP/MODOC/ 
 
 > 9月22日
