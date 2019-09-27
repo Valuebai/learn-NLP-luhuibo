@@ -10,6 +10,23 @@
 
 ——from Mr.Gao[https://github.com/Computing-Intelligence/AutoSummarization]
 ```
+
+## 目前的摘要技术分为
+### 1. Extraction 抽取式
+### 2. Abstraction 生成式
+
+> 目前Extraction抽取式的主要方法：
+
+>> - 基于统计：统计词频，位置等信息，计算句子权值，再简选取权值高的句子作为文摘，特点：简单易用，但对词句的使用大多仅停留在表面信息。
+
+>> - 基于图模型：构建拓扑结构图，对词句进行排序。例如，TextRank/LexRank。
+
+>> - 基于潜在语义：使用主题模型，挖掘词句隐藏信息。例如，采用LDA，HMM。
+
+>> - 基于线路规划：将摘要问题转为线路规划，求全局最优解。
+
+>> 在python语言中用于文本摘要自动提取的库包括goose，SnowNLP，TextTeaser，sumy，TextRank等。
+
 ---
 ## 参考资料
 > [手把手 | 基于TextRank算法的文本摘要（附Python代码）](https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651666276&idx=3&sn=fbd030dda4318ca328fcf918fc1df1e3&chksm=bd4c10f78a3b99e1b6ebfe362a969f36f39e72ce93336bf3fe4fa03b237120156a82c8becfd4&mpshare=1&scene=1&srcid=0926aQxlE7uoNlUkHMjmqwpV&sharer_sharetime=1569463898414&sharer_shareid=7429dfbe8eeefb16193f3b889173524e&key=1d1ca7b6df234b6eb8721eb961bac936b31eea52d6df0f9da7f23ed3ac6a644973c0ce22b6d73db01420f94551b51ba4ff3373167795ed451f3c89779f5c0ab3936d1403bee433d2c0815daaab647ab5&ascene=1&uin=MTE2NTM1NQ%3D%3D&devicetype=Windows+10&version=62070141&lang=zh_CN&pass_ticket=FjR0fPMrSxrRHa7VbnHhBJ%2BAFLgOTXEKsBcxoKN7PN8%3D)
