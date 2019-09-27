@@ -33,3 +33,6 @@
 
 > 9月22日
 > https://shimo.im/sheets/gpgtJqVrgGgJhwVV/MODOC/ 
+
+> 9月29日
+> https://shimo.im/sheets/VXDYCC8WydkYKGP6/MODOC/
