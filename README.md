@@ -63,6 +63,7 @@
 > - github: https://github.com/Valuebai/NewsInfo-Auto-Extration
 
 ![pyltp简介](./images/pyltp简介.jpg)
+
 ---
 ## lesson-06 知识点 
 
@@ -175,24 +176,63 @@ A1@NLP
 
 ---
 ## Books
-- 数学之美.pdf
-- 深度学习-[美]Ian+Goodfellow（伊恩·古德费洛）.pdf
 
-- 《Python自然语言处理实战：核心技术与算法》.pdf
-- 机器学习实战：基于Scikit-Learn和TensorFlow.pdf
-- 神经网络与深度学习（仅限学习交流请勿传播）-邱锡鹏.pdf
-- 斯坦福CS224n_自然语言处理与深度学习_笔记_hankcs.pdf
-- word2vec.pdf
-- Visualizing-Data-using-t-SNE.pdf
+### **入门书籍**
+> - 《统计学习方法(李航)》.pdf
+>  - 《统计学习方法》可以说是机器学习的入门宝典，许多机器学习培训班、互联网企业的面试、笔试题目，很多都参考这本书。
+>  - [github:将李航博士《统计学习方法》一书中所有算法实现](https://github.com/WenDesi/lihang_book_algorithm)
 
 
-- 流畅的python.pdf
-- FlaskWeb开发：基于Python的Web应用开发实战.pdf
-- linux简单命令速查表.pdf
+> - 《机器学习》西瓜书_周志华.pdf
+>  - 周志华老师的《机器学习》（西瓜书）是机器学习领域的经典入门教材之一，周老师为了使尽可能多的读者通过西瓜书对机器学习有所了解, 所以在书中对部分公式的推导细节没有详述，但是这对那些想深究公式推导细节的读者来说可能“不太友好”，本书旨在对西瓜书里比较难理解的公式加以解析，以及对部分公式补充具体的推导细节
+>  - [github:《机器学习》（西瓜书）公式推导解析](https://github.com/datawhalechina/pumpkin-book)
 
 
-- 《百面机器学习算法工程师带你去面试》中文PDF.pdf
+> - 《机器学习实战(Peter Harrington著) 中文》.pdf
+>  - 好多人推荐的
+>  - 每一章都用代码实现了一部分机器学习的算法，对理解算法的原理很有帮助。
+>  - [数据以及参考code可在官网下载](https://www.manning.com/books/machine-learning-in-action)
 
+
+> - 《Python自然语言处理实战：核心技术与算法》.pdf
+>  - 这本书用来过一遍用到的NLP方向的技术，里面很多技术未详细说明
+>  - [github:读书笔记一](https://github.com/SysuJayce/NLP_learn)
+>  - [github:读书笔记二](https://github.com/cunyu1943/python_nlp_practice)
+
+
+### **必读经典**
+> - 《数学之美》吴军.NLP学习必看.pdf
+
+> - 《深度学习》花书_ AI圣经(Deep Learning) .pdf
+>  - 由于太厚太难，不适合入门，有基础再看好点，Elon.Mask推荐
+
+
+### **其他的资料**
+> - 《机器学习实战：基于Scikit-Learn和TensorFlow》.pdf
+> - 《神经网络与深度学习》-邱锡鹏.pdf
+> - ppt-深度学习-李宏毅-宝可梦老师.pptx
+>  - bilibili上有视频，这个台湾老师很可爱
+> - 斯坦福CS224n_自然语言处理与深度学习_笔记_hankcs.pdf
+> - Deep Learning 实战之 word2vec.pdf
+> - linux简单命令速查表.pdf
+
+### **算法相关**
+> - 刷leetcode：https://leetcode-cn.com/
+
+> - 算法《漫画算法：小灰的算法之旅》.pdf
+
+> - 算法小说《算法神探》一口气就能看完的神奇算法书.pdf
+
+
+### **面试书&资料**
+> - 面试《百面机器学习算法工程师带你去面试》中文PDF.pdf
+>   - 收录了超过100道机器学习算法工程师的面试题目和解答，其中大部分源于Hulu（美国著名视频网站）算法研究岗位的真实场景。这本书不仅囊括了机器学习的基本知识，而且还包含了成为优秀算法工程师的相关技能，更重要的是凝聚了笔者对人工智能领域的一颗热忱之心，旨在培养读者发现问题、解决问题、扩展问题的能力，建立对机器学习的热爱，共绘人工智能世界的宏伟蓝图。
+> - 面试《美团机器学习实践 》.pdf
+>   - 全面介绍了美团在多个重要方面对机器学习的应用，涵盖搜索、推荐、广告、风控、机器学习、计算机视觉、语音、自然语言处理、智能调度、机器人和无人配送等多个技术方向。
+
+
+### **python相关书籍**
+> 这里就不记录了
 
 ---
 ## requirements.txt

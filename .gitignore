@@ -128,8 +128,7 @@ temp.py
 /lesson-04/wikiextractor/
 /lesson-04/zhwiki-20190720-pages-articles-multistream.xml
 /lesson-04/data/
-/【Code】《Python自然语言处理实战：核心技术与算法》/
-/Books/
+/【Code】《Python自然语言处理实战：核心技术与算法》
 /lesson-04/test_kaggle_t-SNE.py
 /lesson-06/Lesson-06-First-Step-on-Machine-Learning_.pdf
 /lesson-07/data/
@@ -145,3 +144,4 @@ temp.py
 /lesson-09/notMNIST_small.tar.gz
 /tensorflow/MNIST_data/
 /lesson-11-project-02/Lecuter-18-AutoSummarizaiton.pdf
+/Books/
