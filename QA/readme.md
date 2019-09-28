@@ -11,6 +11,8 @@
 > 新闻人物言论自动提取的一个简单思路 + 
 > [2019-8-11-视频talk.txt](https://github.com/Valuebai/learn-NLP-luhuibo/blob/master/QA/2019-8-11-%E8%A7%86%E9%A2%91talk.txt)
 
+> 2019-8-24直播的对话.txt
+
 ## 课程答疑-石墨文档上
 
 > 7月21日
