@@ -85,6 +85,7 @@
 **[ML神器：sklearn的快速使用](https://www.cnblogs.com/lianyingteng/p/7811126.html)**
 > 传统的机器学习任务从开始到建模的一般流程是：获取数据 -> 数据预处理 -> 训练建模 -> 模型评估 -> 预测，分类。
 
+> [特征工程：预处理数据的方法总结（使用sklearn-preprocessing](https://blog.csdn.net/weixin_40807247/article/details/82793220)
 
 ## lesson-02 知识点
 - 待补充
@@ -115,7 +116,7 @@
 #### 面试题：如果实现softmax()，代码是？为什么要用它？
 
 ---
-## lesson-05 知识点
+## lesson-05-project-01 知识点
 
 - NER
 - TFIDF
@@ -216,6 +217,14 @@
 *正则化的理解*
 > [正则化的核心思想、L1/L2正则化](https://mp.weixin.qq.com/s/LR7Z0RE-CZIgHBGyxeg1Xw)
 
+```
+对于线性方程的求解，是属于线性代数的范畴。
+首先要判断是否有解及是否有唯一解；其次具体求解方法则有矩阵消元法，克莱姆法则，逆矩阵及增广矩阵法等等。
+对于大多数给定数据集，线性方程有唯一解的概率比较小，多数都是解不存在的超定方程组。
+对于这种问题，在计算数学中通常将参数求解问题退化为求最小误差问题，找到一个最接近的解，即术语松弛求解。
+```
+
+> 基于均方误差最小化进行模型求解的方法称为“最小二乘法”（least square method），即通过最小化误差的平方和寻找数据的最佳函数匹配；
 
 ---
 ## lesson-07
@@ -386,6 +395,10 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 - 第一步：安装包 pip install pipreqs
 - 第二步：在对应路径cmd，输入命令生成 requirements.txt文件：pipreqs ./ --encoding=utf8 避免中文路径报错
 - 第三步：下载该代码后直接pip install -r requirements.txt
+
+## 检查python的语法正确性
+- 第一步：安装包 pip install --upgrade pyflakes
+- 第二步：用这个命令（pyflakes xxx.py）就能检查xxx.py文件中的错误。
 
 ---
 ## 《统计学习方法》一书
