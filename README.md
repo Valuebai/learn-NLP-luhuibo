@@ -288,6 +288,7 @@ A1@NLP
 - 训练集、测试集、验证集
 - 神经网络的基础知识
 - 图计算网络
+
 - 正则化
 - 等非常重要的知识
 
@@ -304,7 +305,7 @@ A1@NLP
 ---
 ## lesson-11知识点
 
-
+- 待阅读：论文！！！
 
 ---
 ## lesson-13知识点
@@ -429,3 +430,8 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 问题：特征工程：特征转换，特征提取
 
 答案：
+
+
+## Project-01 参考
+1. https://github.com/zhangxu999/opinon_extraction ， http://39.100.3.165:8421/index.html
+Amazing4 zhangxu1573@qq.com
