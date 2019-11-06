@@ -45,7 +45,7 @@
 
 ### **必读经典**
 > - 《数学之美》吴军.NLP学习必看.pdf
-
+> - 《scikit-learn机器学习常用算法原理及编程实战》
 > - 《深度学习》花书_ AI圣经(Deep Learning) .pdf
 >  - 由于太厚太难，不适合入门，有基础再看好点，Elon.Mask推荐
 
@@ -300,18 +300,25 @@ A1@NLP
 
 ---
 ## lesson-10知识点
-
+- 课堂笔记，详情见：lesson-10下的readme
 
 ---
-## lesson-11知识点
+## lesson-11-Project-02知识点
 
+- Project-02已整理，详情见：https://github.com/Valuebai/Text-Auto-Summarization
 - 待阅读：论文！！！
+- 课堂笔记，详情见：lesson-11下的readme
+
+---
+## lesson-12知识点
+- 课堂笔记，详情见：lesson-12下的readme
+
 
 ---
 ## lesson-13知识点
 
 **课程笔记**
-# 后面再整理进对应的readme.md中
+- 课堂笔记，详情见：lesson-13下的readme
 - RNN公式
 
 
@@ -329,9 +336,7 @@ PPT中的output gate公式，上课时没搞懂，一串公式看着头大（视
  
  尤其是Ct = ft * C_t-1 + i_t * ~C_t 的理解
 
-```markdown
-
-
+```md
 LSTM和GRU的应用场景比较：
 - LSTM 有Forget Gate（控制C_{t-1}）和 Input Gate（控制新的C_t保留程度）
 - GRU : (1-Zt)-> Forgate, Zt -> Input Gate
@@ -342,7 +347,7 @@ LSTM和GRU的应用场景比较：
 ```
 
 - ReLu函数（常用的激活函数）的公式和图像长什么样子？？
-```markdown
+```md
 ReLu函数在SGD中能够快速收敛。
 深度学习中最大的问题是梯度消失问题（~下面解释），使得训练网络收敛越来越慢，而ReLu凭借其线性、非饱和的形式，训练速度则快很多。
 ~：神经网络在进行方向误差传播时，各个层都要乘以激活函数的一阶导数G=e·∅'(x)·x，梯度每传递一层都会衰减一层，网络层数较多时，梯度G就会不停衰减知道消失
@@ -356,6 +361,7 @@ y = x (x>0)
 ```
 
 - 举个例子说明下：用词向量进行文本分类的例子
+
 
 ### kaggle中使用
 作业-project恶意评论分类挑战
@@ -378,6 +384,39 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 
 - 工作中的效果达不到领导的要求——说训练数据不够
 
+
+
+
+
+
+
+## lesson-14-Project-03知识点
+- Project-03已整理，详情见：https://github.com/Valuebai/Sentimental-Analysis-of-Dianping
+- 课堂笔记，详情见：lesson-14下的readme
+
+
+---
+## lesson-15知识点
+
+- Dialogue
+- 课堂笔记，详情见：lesson-15下的readme
+
+---
+## lesson-16-Project-04知识点
+
+- Project-04已整理，详情见：
+- 课堂笔记，详情见：lesson-16下的readme
+
+
+
+
+
+
+
+
+---
+
+
 ---
 ## Sci-Computing
 - SciPythonTutorial1-Numpy介绍.ipynb
@@ -386,8 +425,8 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 - SciPythonTutorial3-Pandas_Cheat_Sheet.pdf
   
   
-##### numpy必知必会26问.py
-##### Numba介绍.ipynb
+#### numpy必知必会26问.py
+#### Numba介绍.ipynb
 
 
 ---

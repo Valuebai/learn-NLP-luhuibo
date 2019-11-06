@@ -145,9 +145,20 @@ temp.py
 /tensorflow/MNIST_data/
 /lesson-11-project-02/Lecuter-18-AutoSummarizaiton.pdf
 /Books/
-/lesson-13-kaggle/input/
+/lesson-13-kaggle-RNN/input/
 /lesson-11-project-02/Lesson-11-more-about-word2vec.pdf
-/lesson-13-kaggle/Lecture-13-RNN(1).pdf
-/lesson-13-kaggle/《The automatic creation of literature abstract》的研究论文，它利用词频和词组频率等特征从文本中提取重要句子，用于总结内容.pdf
-/lesson-12/Lesson-12.pdf
+/lesson-13-kaggle-RNN/Lecture-13-RNN(1).pdf
+/lesson-13-kaggle-RNN/《The automatic creation of literature abstract》的研究论文，它利用词频和词组频率等特征从文本中提取重要句子，用于总结内容.pdf
+/lesson-12-CNN/Lesson-12.pdf
 /data/
+/run-book-ml-skilearn/.ipynb_checkpoints/
+/lesson-13-kaggle-RNN/toxic-comment-classification-Keras-Bi-LSTM/input/
+/lesson-13-kaggle-RNN/toxic-comment-classification-challenge/input/
+/lesson-13-kaggle-RNN/toxic-comment-classification-Keras-Bi-LSTM/weights_base.best.hdf5
+/lesson-13-kaggle-RNN/toxic-comment-classification-Keras-Bi-LSTM/baseline.csv
+/lesson-13-kaggle-RNN/toxic-comment-classification-challenge/submission.csv
+/lesson-14-project-03-Seq2seq/Seq-ELMO与Transformer.pptx
+/lesson-15-Dialogue/Lecture-15-Dialogue.pdf
+/lesson-16-project-04/Lecture-16.pdf
+/lesson-16-project-04/项目4指导书.pptx
+/lesson-10/Lesson-10(1).pdf

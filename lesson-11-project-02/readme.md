@@ -1,3 +1,5 @@
+# Project-02已整理，详情见：https://github.com/Valuebai/Text-Auto-Summarization
+
 
 ## Project-02-文本摘要，项目2的开始
 ```markdown
@@ -123,7 +125,7 @@ TextRank算法是一种抽取式的无监督的文本摘要方法。让我们看
 >> 里面的过程可以参考下，有助于理解文本自动摘要的过程
 
 
-
+> [看部分：linux定时运行脚本](https://www.wandouip.com/t5i42513/)
 
 
 

@@ -1,7 +1,7 @@
 
 
-
-
+> [完全图解RNN、RNN变体、Seq2Seq、Attention机制](https://zhuanlan.zhihu.com/p/28054589)
+> [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 ## kaggle的使用
 ![pic_Toxic Comment Classification Challeng](https://storage.googleapis.com/kaggle-media/competitions/jigsaw/003-avatar.png)
@@ -44,4 +44,25 @@ def load_vectors(fname):
         data[tokens[0]] = map(float, tokens[1:])
     return data
 
+```
+
+```
+    """
+    Compute Area Under the Receiver Operating Characteristic Curve (ROC AUC)
+    from prediction scores.
+
+    Note: this implementation is restricted to the binary classification task
+    or multilabel classification task in label indicator format."""
+    
+
+```
+
+```python
+  # 这个写法很优雅~
+  template = 'Epoch {}, Loss: {}, Accuracy: {}, Test Loss: {}, Test Accuracy: {}'
+  print (template.format(epoch+1,
+                         train_loss.result(),
+                         train_accuracy.result()*100,
+                         test_loss.result(),
+                         test_accuracy.result()*100))
 ```
