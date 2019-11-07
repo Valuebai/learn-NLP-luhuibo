@@ -474,3 +474,10 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 ## Project-01 参考
 1. https://github.com/zhangxu999/opinon_extraction ， http://39.100.3.165:8421/index.html
 Amazing4 zhangxu1573@qq.com
+
+
+## 其他公开课
+
+11月5日公开课《数据挖掘概论与实践》视频和课件链接：
+https://pan.baidu.com/s/1tV3TXhP8SB8_ik65ECDQaA 
+提取码：2onn 

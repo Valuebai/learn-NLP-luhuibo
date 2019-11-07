@@ -80,7 +80,7 @@ def draw_word_cloud(word_cloud):
     plt.show()
 
 
-def test_draw(model, word_str):
+def run_draw(model, word_str):
     '''
     测试绘制的词云
     word_str：输入词，找这个词的相似词
@@ -108,11 +108,12 @@ if __name__ == "__main__":
     model2 = gensim.models.KeyedVectors.load_word2vec_format('./data/bible-vector-stopwords', binary=False)
 
     res1 = model.most_similar('神')
+    print(type(res1))
     print(res1)
     res2 = model.most_similar('耶稣')
     print(res2)
     res3 = model.most_similar('祷告')
     print(res3)
-    test_draw(model, "神")
-    test_draw(model, "耶稣")
-    test_draw(model, "大卫")
+    run_draw(model, "神")
+    run_draw(model, "耶稣")
+    run_draw(model, "大卫")
