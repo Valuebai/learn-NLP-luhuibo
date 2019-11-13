@@ -108,15 +108,15 @@ venv.bak/
 temp.py
 .idea/
 
-/lesson-01/train_sqlResult_1558435.csv
-/lesson-01/train.txt
-/lesson-01/train_movie_comments.csv
-/lesson-01/train_article_9k.txt
-/lesson-01/test_lesson-01_lan_model_class.py
-/lesson-02/读取表格.xlsx
-/lesson-02/test.html
-/lesson-02/temp.html
-/lesson-03/logs.log
+/lesson-01-AI-basic/train_sqlResult_1558435.csv
+/lesson-01-AI-basic/train.txt
+/lesson-01-AI-basic/train_movie_comments.csv
+/lesson-01-AI-basic/train_article_9k.txt
+/lesson-01-AI-basic/test_lesson-01_lan_model_class.py
+/lesson-02-crawler-metro/读取表格.xlsx
+/lesson-02-crawler-metro/test.html
+/lesson-02-crawler-metro/temp.html
+/lesson-03-Algorithms-saleman/logs.log
 /lesson-04/opencc-1.0.4-win32.7z
 /lesson-04/zhwiki-20190720-pages-articles-multistream.xml.bz2
 /lesson-04/zhwiki-latest-pages-articles.xml.bz2
@@ -131,7 +131,7 @@ temp.py
 /【Code】《Python自然语言处理实战：核心技术与算法》
 /lesson-04/test_kaggle_t-SNE.py
 /lesson-06/Lesson-06-First-Step-on-Machine-Learning_.pdf
-/lesson-07/data/
+/lesson-07-ML-model/data/
 /data/
 /lesson-05-project-01/data/
 !/similar_said/urils.py
@@ -144,24 +144,24 @@ temp.py
 /lesson-09/notMNIST_small.tar.gz
 /tensorflow/MNIST_data/
 /lesson-11-project-02/Lecuter-18-AutoSummarizaiton.pdf
-/Books/
-/lesson-13-kaggle-RNN/input/
+
+/lesson-13-RNN-kaggle/input/
 /lesson-11-project-02/Lesson-11-more-about-word2vec.pdf
-/lesson-13-kaggle-RNN/Lecture-13-RNN(1).pdf
-/lesson-13-kaggle-RNN/《The automatic creation of literature abstract》的研究论文，它利用词频和词组频率等特征从文本中提取重要句子，用于总结内容.pdf
+/lesson-13-RNN-kaggle/Lecture-13-RNN(1).pdf
+/lesson-13-RNN-kaggle/《The automatic creation of literature abstract》的研究论文，它利用词频和词组频率等特征从文本中提取重要句子，用于总结内容.pdf
 /lesson-12-CNN/Lesson-12.pdf
 /data/
 /run-book-ml-skilearn/.ipynb_checkpoints/
-/lesson-13-kaggle-RNN/toxic-comment-classification-Keras-Bi-LSTM/input/
-/lesson-13-kaggle-RNN/toxic-comment-classification-challenge/input/
-/lesson-13-kaggle-RNN/toxic-comment-classification-Keras-Bi-LSTM/weights_base.best.hdf5
-/lesson-13-kaggle-RNN/toxic-comment-classification-Keras-Bi-LSTM/baseline.csv
-/lesson-13-kaggle-RNN/toxic-comment-classification-challenge/submission.csv
+/lesson-13-RNN-kaggle/toxic-comment-classification-Keras-Bi-LSTM/input/
+/lesson-13-RNN-kaggle/toxic-comment-classification-challenge/input/
+/lesson-13-RNN-kaggle/toxic-comment-classification-Keras-Bi-LSTM/weights_base.best.hdf5
+/lesson-13-RNN-kaggle/toxic-comment-classification-Keras-Bi-LSTM/baseline.csv
+/lesson-13-RNN-kaggle/toxic-comment-classification-challenge/submission.csv
 /lesson-14-project-03-Seq2seq/Seq-ELMO与Transformer.pptx
 /lesson-15-Dialogue/Lecture-15-Dialogue.pdf
 /lesson-16-project-04/Lecture-16.pdf
 /lesson-16-project-04/项目4指导书.pptx
-/lesson-10/Lesson-10(1).pdf
+/lesson-10-hand-NN-framework/Lesson-10(1).pdf
 /run-book-ml-skilearn/datasets/
 /kaggle/
 /dataset/
@@ -172,3 +172,52 @@ temp.py
 /lesson-16-NLP-future-Project-04/项目4指导书.pptx
 /lesson-14-Seq2seq-project-03/Seq-ELMO与Transformer.pptx
 /lesson-11-NLP-embedding-project-02/Lesson-11-more-about-word2vec.pdf
+/lesson-04-NLP-basic-word2vec/data/
+/lesson-04-NLP-basic-word2vec/wikiextractor/
+/lesson-06-ML-basic/Lesson-06-First-Step-on-Machine-Learning_.pdf
+/lesson-05-NLP-common-project-01/input/
+/lesson-05-NLP-common-project-01/output/
+/lesson-07-ML-model/Lesson-07-08-Classicial-ML-Models.pdf
+/lesson-07-ML-model/.ipynb_checkpoints/
+/lesson-09-DL-basic/.ipynb_checkpoints/
+/lesson-09-DL-basic/notMNIST_large/
+/lesson-09-DL-basic/notMNIST_small/
+/lesson-09-DL-basic/notMNIST_large.tar.gz
+/lesson-09-DL-basic/notMNIST_small.tar.gz
+/lesson-07-ML-model/lesson07-review/
+/Books/linux简单命令速查表.图片/
+/Books/linux简单命令速查表.pdf
+/Books/English_book/
+/Books/《深度学习》花书_ AI圣经(Deep Learning) .pdf
+/Books/Deep Learning 实战之 word2vec.pdf
+/Books/scikit-learn机器学习：常用算法原理及编程实战.pdf
+/Books/ppt-深度学习-李宏毅-宝可梦老师.pptx
+/Books/python《编写高质量代码 改善Python程序的91个建议》.pdf
+/Books/《统计学习方法(李航)》带书签的.pdf
+/Books/《机器学习实战：基于Scikit-Learn和TensorFlow》.pdf
+/Books/python《流畅的python》.pdf
+/Books/《统计学习方法(李航)》.pdf
+/Books/《数据挖掘导论  完整版》.pdf
+/Books/python《FlaskWeb开发：基于Python的Web应用开发实战》.pdf
+/Books/pyhton《Python数据分析基础教程：NumPy学习指南（第2版）》.pdf
+/Books/斯坦福CS224n_自然语言处理与深度学习_笔记_hankcs.pdf
+/Books/算法《我的第一本算法书》.pdf
+/Books/《美团机器学习实践》_美团算法团队.pdf
+/Books/《数学之美》吴军.NLP学习必看.pdf
+/Books/《统计学习方法（李航） 第2版》.pdf
+/Books/《机器学习实战(Peter Harrington著) 中文》.pdf
+/Books/《机器学习》西瓜书_周志华.pdf
+/Books/机器学习 新手快速入门/
+/Books/算法小说《算法神探》一口气就能看完的神奇算法书.pdf
+/Books/面试《百面机器学习算法工程师带你去面试》中文PDF.pdf
+/Books/《神经网络与深度学习》-邱锡鹏.pdf
+/Books/算法《算法图解》.pdf
+/Books/《Python自然语言处理实战：核心技术与算法》.pdf
+/Books/算法《漫画算法：小灰的算法之旅》.pdf
+/lesson-04-NLP-basic-word2vec/wikiextractor/extract.sh
+/lesson-04-NLP-basic-word2vec/wikiextractor/categories.filter
+/lesson-04-NLP-basic-word2vec/wikiextractor/cirrus-extract.py
+/lesson-01-AI-basic/Computer Machinery and Intelligence.pdf
+/lesson-01-AI-basic/lesson01-for-2019-summer.pdf
+/数据竞赛/去哪儿网—数据清洗/input/
+/数据竞赛/
