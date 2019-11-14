@@ -7,8 +7,9 @@
 ![License](https://img.shields.io/badge/License-MIT-orange.svg)
 ![Contributions](https://img.shields.io/badge/Contributions-welcome-ff69b4.svg)
 
-## 说明
-lesson的命名跟上课内容有些有出入，目前的命名是按照我的学习思路来填充
+### 说明
+- lesson的命名跟上课内容有些有出入，目前的命名是按照我的学习思路来填充
+- 画出思维导图
 
 ## Books
 
@@ -384,25 +385,27 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 - 课堂笔记，详情见：lesson-16下的readme
 
 
-
-
-
-
-
-
 ---
+## QA
+
+- [课程答疑记录，详情见QA/readme.md](https://github.com/Valuebai/learn-NLP-luhuibo/tree/master/QA)
 
 
 ---
 ## Sci-Computing
-- SciPythonTutorial1-Numpy介绍.ipynb
-- SciPythonTutorial2-Matplotlib.ipynb
-- SciPythonTutorial3-Pandas_介绍.ipynb
-- SciPythonTutorial3-Pandas_Cheat_Sheet.pdf
-  
-  
-#### numpy必知必会26问.py
-#### Numba介绍.ipynb
+
+- [详情见./Sci-computing/readme.md](https://github.com/Valuebai/learn-NLP-luhuibo/tree/master/sci-computing)
+
+
+
+---
+## Tensorflow
+
+- [Tensorflow相关学习/readme.md](https://github.com/Valuebai/learn-NLP-luhuibo/tree/master/tensorflow)
+
+---
+## Python进阶
+- python代码一定多练啊！手敲别人代码也行啊！！不会就敲多做笔记！！！
 
 
 ---
@@ -416,40 +419,7 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 - 第一步：安装包 pip install --upgrade pyflakes
 - 第二步：用这个命令（pyflakes xxx.py）就能检查xxx.py文件中的错误。
 
----
-## 《统计学习方法》一书
-**这本书的第一章：统计学习方法概论，里面有很多内容解释对理解和学习机器学习很有帮助，需要找个时间精简下做成笔记放在这里**
 
----
-## QA
-问题：主题模型和lda和拉普拉斯变换
-
-答案：
-
-问题：对于0/1分类变量/数值变量除了归一化还有其他处理法吗
-
-答案：
-
-问题：前后文关系和句法分析和知识图谱
-
-答案：
-
-问题：切词切不好和遇到新词以及源代码改进
-
-答案：
-
-问题：两堆名字，对应论文和著作文，求最快匹配
-
-答案：
-
-问题：特征工程：特征转换，特征提取
-
-答案：
-
-
-## Project-01 参考
-1. https://github.com/zhangxu999/opinon_extraction ， http://39.100.3.165:8421/index.html
-Amazing4 zhangxu1573@qq.com
 
 
 ## 其他公开课
@@ -460,7 +430,7 @@ https://pan.baidu.com/s/1tV3TXhP8SB8_ik65ECDQaA
 
 
 ## 之前的目录
-
+```md
 第一部分 基础篇 经典人工智能模型方法 
 第一周 人工智能导论与语法树，自动机理论
  1.1 形式语言与语法树 
@@ -711,3 +681,5 @@ https://pan.baidu.com/s/1tV3TXhP8SB8_ik65ECDQaA
  16.5.1) 问题定义与认识
  16.5.2) 少量数据与机器学习的不可行性
  16.6.基于人类背景知识的常识推理与认知问题 
+ 
+```

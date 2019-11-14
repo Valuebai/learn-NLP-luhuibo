@@ -33,3 +33,16 @@
 
 
 ![pyltp简介](../images/pyltp简介.jpg)
+
+
+
+
+## Project-01 参考
+1. https://github.com/zhangxu999/opinon_extraction ， http://39.100.3.165:8421/index.html
+Amazing4 zhangxu1573@qq.com
+
+2、https://github.com/RyanPeking/Automatic-view-extraction
+
+## 开课吧给出的模范
+
+https://github.com/MingDuoLin/News-speech-extraction
