@@ -152,7 +152,7 @@ temp.py
 /lesson-12-CNN/Lesson-12.pdf
 /data/
 /run-book-ml-skilearn/.ipynb_checkpoints/
-/lesson-13-RNN-kaggle/toxic-comment-classification-Keras-Bi-LSTM/input/
+/lesson-13-RNN-kaggle/input/
 /lesson-13-RNN-kaggle/toxic-comment-classification-challenge/input/
 /lesson-13-RNN-kaggle/toxic-comment-classification-Keras-Bi-LSTM/weights_base.best.hdf5
 /lesson-13-RNN-kaggle/toxic-comment-classification-Keras-Bi-LSTM/baseline.csv
@@ -225,3 +225,5 @@ temp.py
 /lesson-11-DL-embedding-project-02/summary_features/training17.txt
 /lesson-11-DL-embedding-project-02/summary_features/stopWordList.txt
 /数据竞赛kaggle/
+/思维导图/
+/lesson-13-RNN-kaggle/output/

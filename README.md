@@ -294,66 +294,11 @@ https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIume
 ---
 ## lesson-13知识点
 
-**课程笔记**
-- 课堂笔记，详情见：lesson-13下的readme
-- RNN公式
-
-
-- LSTM(Long Short Term Memory，一种特殊的RNN)主要解决什么问题？？
-- 解决：LSTM专门设计用来避免长期依赖问题的
-- 主要用来：用门gate的结构来对单元状态的增加或者删除信息。（门是选择性让信息通过的方式）
-PPT中的output gate公式，上课时没搞懂，一串公式看着头大（视频中最核心的点，看回放）
-
-比喻：人与人之间的信息传递：A-B-C-D，用LSTM相当于在中间加了i,j,k，作为中间人
-
-- LSTM的变种（变体）形式：GRU（Gated Recurrent Unit）
- - 提出的论文地址：http:arxiv.org/pdf/1406.1078v3.pdf
- - GRU将输入门和遗忘门结合成一个单独的“更新门”
- 
- 
- 尤其是Ct = ft * C_t-1 + i_t * ~C_t 的理解
-
-```md
-LSTM和GRU的应用场景比较：
-- LSTM 有Forget Gate（控制C_{t-1}）和 Input Gate（控制新的C_t保留程度）
-- GRU : (1-Zt)-> Forgate, Zt -> Input Gate
-
-- GRU模型精简，参数少，拟合能力相对比较弱，适用于小规模不是很复杂的数据集
-- LSTM 参数多，拟合能力强，适合大规模复杂度高的数据集
-
-```
-
-- ReLu函数（常用的激活函数）的公式和图像长什么样子？？
-```md
-ReLu函数在SGD中能够快速收敛。
-深度学习中最大的问题是梯度消失问题（~下面解释），使得训练网络收敛越来越慢，而ReLu凭借其线性、非饱和的形式，训练速度则快很多。
-~：神经网络在进行方向误差传播时，各个层都要乘以激活函数的一阶导数G=e·∅'(x)·x，梯度每传递一层都会衰减一层，网络层数较多时，梯度G就会不停衰减知道消失
-
-公式：
-y = 0 (x<0)
-y = x (x>0)
-
-图像：
-
-```
-
-- 举个例子说明下：用词向量进行文本分类的例子
-
-
-### kaggle中使用
-作业-project恶意评论分类挑战
-
-- 学会使用kaggle
-- kaggle的竞赛经历
-
-视频中用到的是kaggle.com/yekenot/pooled-gru-fasttext
-改动kaggle-notebook中的代码，让效果超过上面的，把代码保存下来，为项目3做准备
-
-- 作业中的书和论文，主要来理解RNN
-
-assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN这些的
-
-
+- **课程笔记**: 详情见lesson-13下的readme.md
+- RNN 及变体 LSTM, GRU, 
+- Kaggle使用
+- Toxic Comment Classification Challeng——Baseline，数据处理+不同模型训练+提分
+- fastText
 
 **面试题：**
 1. LSTM如何防止梯度爆炸
@@ -427,6 +372,14 @@ assignment5：transger-learning的论文，主要讲seq2seq，里面有涉及RNN
 11月5日公开课《数据挖掘概论与实践》视频和课件链接：
 https://pan.baidu.com/s/1tV3TXhP8SB8_ik65ECDQaA 
 提取码：2onn 
+
+11.14日大数据开发公开课：
+电商双十一背后的实时计算核心技术之Spark Streaming——视频、课件：
+链接：https://pan.baidu.com/s/1k5-TY156crmMpqSM0Jc_iQ 
+提取码：2sqx 
+
+11月14日公开课，数据分析之kNN(k近邻)算法精讲课件及回放视频网盘链接：https://pan.baidu.com/s/1U5UWnqbSHiB203wBM88giw 
+提取码：v2nk 
 
 
 ## 之前的目录
