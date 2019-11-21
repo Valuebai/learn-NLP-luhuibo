@@ -1,6 +1,7 @@
 # AI&NLP
 ## 记录学习NLP之路，一起加油 learn NLP together, code for AI
 
+test
 
 ![Languages](https://img.shields.io/badge/Languages-Python3.6-green)
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen.svg)
@@ -297,7 +298,8 @@ https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIume
 - **课程笔记**: 详情见lesson-13下的readme.md
 - RNN 及变体 LSTM, GRU, 
 - Kaggle使用
-- Toxic Comment Classification Challeng——Baseline，数据处理+不同模型训练+提分
+- Toxic Comment Classification Challeng
+  - 按照readme下的Baseline1，2,3 不同模型训练+数据处理+提分
 - fastText
 
 **面试题：**

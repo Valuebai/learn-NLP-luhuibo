@@ -2,17 +2,20 @@
 
 ## 助于理解RNN的优秀文章
 > [完全图解RNN、RNN变体、Seq2Seq、Attention机制](https://zhuanlan.zhihu.com/p/28054589)
+
 > [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 
 ## 作业-project恶意评论分类挑战
 Toxic Comment Classification Challeng 以前的kaggle比赛，很值得学习参考，特别是做情感细颗粒的
 
-https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/notebooks，
+> https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/notebooks
+
 上面有好多大佬开源分享自己的比赛经验，有太多太多学习的东西，赞
 
 - [一开始啥都不懂的，看下大佬写的For Beginners](https://www.kaggle.com/sbongo/for-beginners-tackling-toxic-using-keras)
 
+---
 ### 1. 数据EDA
 - 不管哪个比赛，对数据的处理往往是特别重要的！
 - 下面的链接是大神公开这个比赛的数据EDA+特征工程，必看
@@ -65,7 +68,7 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/notebooks
 > https://www.kaggle.com/jhoward/minimal-lstm-nb-svm-baseline-ensemble
 
 
-
+P.S. input和output文件夹数据太大，故没有上传
 
 
 
