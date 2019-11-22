@@ -1,7 +1,6 @@
 # AI&NLP
 ## 记录学习NLP之路，一起加油 learn NLP together, code for AI
 
-test
 
 ![Languages](https://img.shields.io/badge/Languages-Python3.6-green)
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen.svg)
