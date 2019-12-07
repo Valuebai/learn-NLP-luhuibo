@@ -6,68 +6,63 @@
 @Date   ：2019/8/5 0:18
 @Desc   ：softmax的学习及实现
 
+## 神经网络的softmax如何理解， 其作用是什么？
+- softmax是一种归一化的方式，可以将数据转换到[0,1]之间的概率分布；
+- softmax就是“柔软的”max，非给出实际的最大值。Softmax实际上是一种概率分布，使得最大的那个概率最大，其余的概率小，所有概率和为1。
+- softmax常用来解决多分类问题。
+
 softmax函数将任意n维的实值向量转换为取值范围在(0,1)之间的n维实值向量，并且总和为1。
 例如：向量softmax([1.0, 2.0, 3.0]) ------> [0.09003057, 0.24472847, 0.66524096]
 
-性质：
-
+## softmax的性质：
 1. 因为softmax是单调递增函数，因此不改变原始数据的大小顺序。
 2. 将原始输入映射到(0,1)区间，并且总和为1，常用于表征概率。
 3. softmax(x) = softmax(x+c), 这个性质用于保证数值的稳定性。
 
-softmax的实现及数值稳定性
-
+## softmax的实现
 
 import numpy as np
-
-
 def softmax(x):
     """Compute the softmax of vector x."""
+    x = x - np.max(x)  # 性质3 softmax(x) = softmax(x+c)
     exp_x = np.exp(x)
     softmax_x = exp_x / np.sum(exp_x)
     return softmax_x
 
 
 # 让我们来测试一下上面的代码：
+print(softmax([1, 2, 3]))   # result: array([0.09003057, 0.24472847, 0.66524096])
 
-print(softmax([1, 2, 3]))
-# result: array([0.09003057, 0.24472847, 0.66524096])
 
-# 但是，当我们尝试输入一个比较大的数值向量时，就会出错：
+## 性质3 why? 当我们尝试输入一个比较大的数值向量时，就会出错：
 
-print(softmax([1000, 2000, 3000]))
-# result: array([nan, nan, nan])
+print(softmax([1000, 2000, 3000]))      # result: array([nan, nan, nan])
 
-这是由numpy中的浮点型数值范围限制所导致的。
-当输入一个较大的数值时，sofmax函数将会超出限制，导致出错。
-为了解决这一问题，这时我们就能用到sofmax的第三个性质，
-即：softmax(x) = softmax(x+c)，
+这是由numpy中的浮点型数值范围限制所导致的。当输入一个较大的数值时，sofmax函数将会超出限制，导致出错。
+为了解决这一问题，这时我们就能用到sofmax的第三个性质，即：softmax(x) = softmax(x+c)，
 
-一般在实际运用中，通常设定c = - max(x)。
-接下来，我们重新定义softmax函数：
 =================================================='''
 
 import numpy as np
 
 
-def softmax(vec):
+def softmax(x):
     """Compute the softmax in a numerically stable way."""
-    vec = vec - np.max(vec)  # softmax(x) = softmax(x+c)
-    exp_x = np.exp(vec)
+    x = x - np.max(x)  # 性质3 softmax(x) = softmax(x+c)
+    exp_x = np.exp(x)
     softmax_x = exp_x / np.sum(exp_x)
     return softmax_x
 
 
 # 然后再次测试一下：
 
-print(softmax([1000, 2000, 3000]))
-# result: array([0., 0., 1.])
-# Done!
+print(softmax([3.0, 1.0, 0.2]))
+
+
+# result: [0.8360188  0.11314284 0.05083836]
 
 
 # 以上都是基于向量上的softmax实现，下面提供了基于向量以及矩阵的softmax实现，代码如下：
-
-import numpy as np
 
 
 def softmax_matrix(x):
@@ -103,3 +98,13 @@ def softmax_matrix(x):
 
     assert x.shape == orig_shape
     return x
+
+
+matrix = np.array(
+    [
+        [3.0, 1.0, 0.2],
+        [3.0, 1.0, 0.2],
+        [3.0, 1.0, 0.2]
+    ]
+)
+print(softmax_matrix(matrix))
