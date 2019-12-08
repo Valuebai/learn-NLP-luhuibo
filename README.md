@@ -15,10 +15,10 @@
 - [记录在Books/readme.md](https://github.com/Valuebai/learn-NLP-luhuibo/tree/master/Books)
 
 ## 思维导图
-- [思维导图]()
+- [思维导图](https://github.com/Valuebai/learn-NLP-luhuibo/tree/master/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE)
 
 ## 面试题目
-- [面试题目]()
+- [面试题目](https://github.com/Valuebai/learn-NLP-luhuibo/tree/master/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE)
 
 
 ---
