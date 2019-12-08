@@ -7,14 +7,18 @@
 ![License](https://img.shields.io/badge/License-MIT-orange.svg)
 ![Contributions](https://img.shields.io/badge/Contributions-welcome-ff69b4.svg)
 
-### 说明
+
 - lesson的命名跟上课内容有些有出入，目前的命名是按照我的学习思路来填充
-- 画出思维导图
+
 
 ## Books
-
 - [记录在Books/readme.md](https://github.com/Valuebai/learn-NLP-luhuibo/tree/master/Books)
 
+## 思维导图
+- [思维导图]()
+
+## 面试题目
+- [面试题目]()
 
 
 ---
@@ -185,7 +189,7 @@
 ---
 ## lesson-07
 
-
+**课程笔记**: 详情见lesson-07下的readme
 
 - 目标：判别一篇新闻的来源是否为新华社（新闻文章抄袭判断）
 - 重点：样本中有 87% 来源是新华社，因此低于87%的的判别可以认为是无效的
@@ -198,6 +202,8 @@ Logistic Regression、KNN、SVM、Naive Bayes、Random Tree、 Random Forest
 
 ---
 ## lesson-08知识点 
+
+**课程笔记**: 详情见lesson-08下的readme
 
 基于新闻文章抄袭判断来测试各类模型算法
 - KNN
@@ -249,6 +255,8 @@ https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIume
 ---
 ## lesson-09知识点 
 
+**课程笔记**: 详情见lesson-09下的readme
+
 <font color=red>**本次作业，你需要完成1, 2, 3三个联系。 能够掌握：**</font>
 - 数据预处理的知识
 - 深度学习程序的构建方式
@@ -271,6 +279,18 @@ https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIume
 ## lesson-10知识点
 - 课堂笔记，详情见：lesson-10下的readme
 
+
+课程内容
+- tensorflow图计算
+- pytorch和keras等神经网络的原理
+
+作业
+- 手把手搭建NN
+- 用word2vec+fully connected neural networks 完成“豆瓣电影评论”分类
+
+Reading
+TensorFlow-Examples：https://github.com/aymericdamien/TensorFlow-Examples
+
 ---
 ## lesson-11-Project-02知识点
 
@@ -283,23 +303,54 @@ https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIume
 
 - Project-02已整理，详情见：https://github.com/Valuebai/Text-Auto-Summarization
 
+
+
+
 ---
 ## lesson-12知识点
 
+**课程笔记**: 详情见lesson-12下的readme
 - CNN分类图片
 - 从LetNet到ResNet总结
-- 课堂笔记，详情见：lesson-12下的readme
+1. Project II
+2. Convolutional Neural Networks
+3. Pooling, Batch Normalization
+4. Transfer Learning
+
+**作业**：详情见lesson-12下的readme.md
+Tensorflow CNN
+1. https://github.com/Computing-Intelligence/
+jupyters_and_slides/blob/master/2019-summer/
+assignments/assignment-12-cnn.ipynb
+2. 列出从LeNet到ResNet的⽹络的变化和区别
+
+**面试题：** 
+- CV课程老师的视频
 
 
 ---
 ## lesson-13知识点
 
-- **课程笔记**: 详情见lesson-13下的readme.md
-- RNN 及变体 LSTM, GRU, 
+**课程笔记**: 详情见lesson-13下的readme.md
+- RNN 及变体LSTM, GRU
+- RNN in pure python, Tensorflow, Keras
+- Some Useful applications for RNN
 - Kaggle使用
 - Toxic Comment Classification Challeng
   - 按照readme下的Baseline1，2,3 不同模型训练+数据处理+提分
 - fastText
+
+**作业**：详情见lesson-13下的readme.md
+- Reading: 
+  - 1. Hands-on tensorflow and scikit learning 
+  - 2. https://colah.github.io/posts/2015-08-Understanding-LSTMs/ 
+  - 3. https://arxiv.org/pdf/1506.00019.pdf 
+  - 4. https://arxiv.org/pdf/1409.3215.pdf
+  - 5. https://www.kaggle.com/suniliitb96/tutorial-keras-transfer-learning-withresnet50/notebook
+- Kaggle Project: https://www.kaggle.com/c/jigsaw-toxic-comment-classificationchallenge
+  - 找到⼀个notebook解决⽅案，修改源代码，使你的结果超过原始作者
+  - 然后使⽤修改过的解决⽅法，解决⾖瓣评分的问题
+  - 把⾃⼰的源代码都发布到GitHub上
 
 **面试题：**
 1. LSTM如何防止梯度爆炸
@@ -310,12 +361,28 @@ https://zoom.us/recording/share/j5O4MP9x5eIBYl-CFbBBSCf8ySTaCy_Zt3BRDIocJRawIume
 
 
 
-
-
-
 ## lesson-14-Project-03知识点
-- Project-03已整理，详情见：https://github.com/Valuebai/Sentimental-Analysis-of-Dianping
-- 课堂笔记，详情见：lesson-14下的readme
+
+**课程笔记**: 课堂笔记，详情见lesson-14下的readme
+1. 复习 Word2Vec
+2. Sequence to Sequence (Seq2Seq)
+3. CoVe, EMLo, FastText, SQUAD
+4. 参考文献
+5. 关于项目3 
+
+**作业**：详情见lesson-14下的readme.md
+1. Seq2Seq
+2. Github Source Code
+https://github.com/fortyMiles/neural-machine-translation
+3. https://arxiv.org/abs/1706.03762
+4. http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors.pdf
+5. https://allennlp.org/elmo
+6. https://github.com/tensorflow/tensor2tensor
+
+一文看懂NLP：word 表示技术的变迁，从word2vec-elmo-GPT-BERT
+> https://tech.yiewan.com/news-id-3408.html
+
+**Project-03已整理**，详情见：https://github.com/Valuebai/Sentimental-Analysis-of-Dianping
 
 
 ---
@@ -383,7 +450,59 @@ https://pan.baidu.com/s/1tV3TXhP8SB8_ik65ECDQaA
 提取码：v2nk 
 
 
-## 之前的目录
+## BAT 常见的面试题（不分先后）
+
+自我介绍/项目介绍
+类别不均衡如何处理
+数据标准化有哪些方法/正则化如何实现 /onehot 原理
+为什么 XGB 比 GBDT 好
+数据清洗的方法有哪些/数据清洗步骤
+缺失值填充方式有哪些
+变量筛选有哪些方法
+信息增益的计算公式
+样本量很少情况下如何建模
+交叉检验的实现
+决策树如何剪枝
+WOE/IV 值计算公式
+分箱有哪些方法/分箱原理是什么
+手推 SVM：目标函数，计算逻辑，公式都写出来，平面与非平面
+核函数有哪些
+XGB 原理介绍/参数介绍/决策树原理介绍/决策树的优点
+Linux/C/Java熟 悉程度
+过拟合如何解决
+平时通过什么渠道学习机器学习（好问题值得好好准备）
+决策树先剪枝还是后剪枝好
+损失函数有哪些
+偏向做数据挖掘还是算法研究（好问题）
+bagging 与 boosting 的区别
+模型评估指标有哪些
+解释模型复杂度/模型复杂度与什么有关
+说出一个聚类算法
+ROC 计算逻辑
+如何判断一个模型中的变量太多
+决策树与其他模型的损失函数、复杂度的比较
+决策树能否有非数值型变量
+决策树与神经网络的区别与优缺点对比
+数据结构有哪些
+model ensembling 的方法有哪些
+
+
+## 如何在 Jupyter 中写数学公式
+
+```jupyter
+**插入**：我们在这里快速的过一下如何在 Jupyter 中写数学公式。 这个其实很简单，如果我们要输入一个公式，例如A1, 那么，我们在Jupyter中输入`$A_i$`, 然后 Enter， 是不是就变成了$A_i$? 其实两个`$$`之间的东西就是 Latex 的符号，`$..$`这个我们叫做inline模式，意思就是说你写出来的公式是和你的文字在一行里，如果你`$$..$$``，这个公式就会单独是一行。
+
+我们现在再试一个, 输入`$$\frac{P_i}{\sum_{j \in \mathbf{V}}^NP_j}$$`, 输完之后 Enter， 你看到了什么？ 
+
+$$\frac{P_i}{\sum_{j \in \mathbf{V}}^NP_j}$$
+
+这个时候会有同学说，可是这些符号，我怎么记得住呢？
+我给大家提供了一个参考手册，大家有空就看看 https://github.com/Artificial-Intelligence-for-NLP/comment-setimental-classification/blob/master/Latex-Symbols.pdf ，熟能生巧。 
+
+```
+
+
+## Mr.Gao的lesson目录
 ```md
 第一部分 基础篇 经典人工智能模型方法 
 第一周 人工智能导论与语法树，自动机理论
