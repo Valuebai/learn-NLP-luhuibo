@@ -13,7 +13,7 @@ pyltp==0.2.1
 numpy==1.16.4
 jieba==0.39
 requests==2.22.0
-Pillow==6.2.1
+Pillow==8.1.1
 beautifulsoup4==4.8.0
 psyco==1.6
 scikit_learn==0.21.3
