@@ -17,5 +17,5 @@ Pillow==6.2.1
 beautifulsoup4==4.8.0
 psyco==1.6
 scikit_learn==0.21.3
-tensorflow==1.14.0
+tensorflow==2.5.0
 PyYAML==5.1.2
